@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color:rgb(55, 47, 107);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    width: 97%;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 1em;
+    background-color: rgb(17, 11, 56);
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px white;
+}
+.buttons {
+    width: 100%;
+    position: relative;
+    height: 30px;
+}
+.buttons ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.buttons ul li {
+    margin-top: 2em;
+}
+.buttons ul li a {
+    padding: 10px 25px;
+    margin: 2em .5em;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 3em;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.buttons ul li .active {
+    border: none;
+    color: rgb(17, 11, 56);
+    background-color: white;}
+.buttons ul li a:hover {
+    border: none;
+    color: rgb(17, 11, 56);
+    background-color: white;
+    transform: translateY(-30px);
+    transition: .4s ease-in-out;
+}
+.nav-button {
+    all: unset
+}
+.hamburger {
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    display: none;
+    transition: .4s ease-in-out;
+}
+.hamburger div {
+    width: 25px;
+    height: 2px;
+    margin: 6px 0;
+    background-color: white;
+}
+.button {
+    float: right;
+    padding: 10px 25px;
+    margin: 2em .5em;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 3em;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.button:hover {
+    background-color: white;
+    color: rgb(17, 11, 56);
+    border: none;
+    padding: 15px 27px;
+    margin-top: 2.7em;
+    transition: .4s ease-in-out;
+}
+.section {
+  margin-top: 3.5em;
+}
+.about {
+  margin: auto
+}
+.about h1 {
+  margin-left: 12.7em;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+.title-bdr {
+    position: relative;
+    width: 150px;
+    margin: auto 29em;
+  }
+
+  .text-center .title-bdr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left-bdr,
+  .right-bdr {
+    height: 6px;
+    width: 60px;
+    background-image: linear-gradient(to right, white, white);
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  .left-bdr {
+    left: 0px;
+    -webkit-animation: left 2s infinite;
+            animation: left 2s infinite;
+  }
+  
+  .right-bdr {
+    right: 0px;
+    -webkit-animation: right 2s infinite;
+            animation: right 2s infinite;
+  }
+  
+  @-webkit-keyframes left {
+    0%,
+    50%,
+    100% {
+      width: 60px;
+    }
+    25% {
+      width: 120px;
+    }
+    75% {
+      width: 10px;
+    }
+  }
+  
+  @keyframes left {
+    0%,
+    50%,
+    100% {
+      width: 60px;
+    }
+    25% {
+      width: 120px;
+    }
+    75% {
+      width: 10px;
+    }
+  }
+  
+  @-webkit-keyframes right {
+    0%,
+    50%,
+    100% {
+      width: 60px;
+    }
+    25% {
+      width: 10px;
+    }
+    75% {
+      width: 120px;
+    }
+  }
+  
+  @keyframes right {
+    0%,
+    50%,
+    100% {
+      width: 60px;
+    }
+    25% {
+      width: 10px;
+    }
+    75% {
+      width: 120px;
+    }
+  }
+.container {
+    width: 100%;
+    height: 25em;
+    margin: 3em auto;
+    display: flex;
+    padding: 2em;
+}
+.row {
+    flex: 1;
+    height: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px white;
+    display: inline-block;
+    padding: 1em;
+}
+.row .rowBtn {
+    width: 15em;
+    height: 40px;
+    font-size: 18px;
+    margin: .4em 1em;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 2px 2px 3px white;
+}
+.row .rowBtn:hover {
+  transform: translateX(10px);
+  transition: .3s ease-in-out;
+}
+.row2 {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 58vh;
+    background-color: rgb(11, 5, 54);
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px;
+    margin-left: .8em;
+}
+form {
+  padding: 1em;
+}
+label {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+input {
+  width: 200px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+input:focus {
+  border-bottom: 1px solid rgb(55, 47, 107);
+}
+.email {
+  width: 250px;
+}
+.message {
+  display: flex;
+  padding: 1em 0 0;
+}
+.message label {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  padding-right: 1em;
+}
+textarea {
+  color: white;
+  background-color: transparent;
+}
+.submit .btn {
+  padding: 10px;
+  float: right;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  color: white;
+  background-color: rgb(11, 5, 54);
+}
+.submit .btn:hover {
+  background-color: white;
+  color: rgb(17, 11, 56);
+  border: none;
+  transition: .4s ease-in-out;
+}
+
+@media only screen and (max-width: 830px) {
+  .hamburger {
+      display: block;
+  }
+  #nav-check:checked ~ .buttons {
+      left: 8px;
+  }
+  .buttons {
+      position: absolute;
+      left: -3000px;
+      top: 12;
+      z-index: 999;
+      width: 280px;
+      height: 92vh;
+      background-color: #fefefe;
+      transition: 0.4s ease-in-out;
+      border-radius: 5px;
+      box-shadow: 2px 0 20px 0 rgba(0,0,0,0.05);
+  }
+  .buttons ul {
+      display: block;
+      margin-top: 10px;
+  }
+  .buttons ul li a {
+      margin: 0;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      padding: 10px 15px;
+      color: black;
+      border: none;
+      background-color: green;
+  }
+  .buttons ul li a:hover {
+      color: white;
+      background-color: rgb(17, 11, 56);
+  }
+  .buttons ul li .active {
+      color: white;
+      background-color: rgb(17, 11, 56);
+  }
+  .nav-button {
+      width: 88%;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .main {
+    height: 130vh;
+  }
+  .section {
+    position: absolute;
+    right: 0;
+  }
+  form {
+    position: relative;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18em;
+  }
+  .row,
+  .row2 {
+    flex: 1;
+    margin-bottom: 40px;
+  }
+  .row {
+    width: 37%;
+  }
+  .row2 {
+    width: 90%;
+    box-shadow: 0px 0px 5px;
+    height: 63vh;
+  }
+  .submit {
+    right: 0;
+    bottom: -20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 940px) {
+  body {
+    overflow-x: hidden;
+  }
+  .section {
+    right: -8em;
+  }
+  .row {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .section {
+    right: -10em;
+  }
+  .row {
+    width: 54%;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .section {
+    right: -15em;
+  }
+  .row {
+    width: 62%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .row2 {
+    width: 100%;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .section {
+    right: -18em;
+  }
+  .row {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .row {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .container {
+    padding: 5px 10px 0 1px;
+  }
+  label {
+    font-size: 15px;
+  }
+  input {
+    width: 206px;
+  }
+  .email {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .section {
+    right: -21em;
+  }
+  .row {
+    width: 80%;
+  }
+  .row .rowBtn {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .row2 {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .section {
+    right: -23em;
+  }
+  .row {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  input {
+    font-size: 12px;
+  }
+  .email {
+    width: 180px;
+  }
+  textarea {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color:rgb(55, 47, 107);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    width: 97%;
+    height: 95vh;
+    border-radius: 10px;
+    margin-top: 1em;
+    background-color: rgb(17, 11, 56);
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px white;
+}
+.buttons {
+    width: 100%;
+    position: relative;
+    height: 30px;
+}
+.buttons ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.buttons ul li {
+    margin-top: 2em;
+}
+.buttons ul li a {
+    padding: 10px 25px;
+    margin: 2em .5em;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 3em;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.buttons ul li .active {
+    border: none;
+    color: rgb(17, 11, 56);
+    background-color: white;}
+.buttons ul li a:hover {
+    border: none;
+    color: rgb(17, 11, 56);
+    background-color: white;
+    transform: translateY(-30px);
+    transition: .4s ease-in-out;
+}
+button {
+    all: unset
+}
+.hamburger {
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    display: none;
+    transition: .4s ease-in-out;
+}
+.hamburger div {
+    width: 25px;
+    height: 2px;
+    margin: 6px 0;
+    background-color: white;
+}
+.content {
+    width: 100%;
+    height: 70vh;
+    margin-top: 4em;
+    display: flex;
+}
+.text {
+    width: 60%;
+}
+h1 {
+    color:rgb(17, 11, 56);
+    text-shadow: 2px 3px 10px white;
+    padding: .7em .3em 10px .3em;
+    font-size: 6em;
+}
+h3 {
+    color: white;
+    font-size: 30px;
+    padding-left: 1em;
+}
+img {
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    margin-top: 1.4em;
+    margin-left: auto;
+    margin-right: 1em;
+    box-shadow: 0px 0px 20px white;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+@media only screen and (max-width: 1042px) {
+    .content {
+        position: relative;
+        width: 100%;
+    }
+    .text {
+        width: 60%;
+    }
+    img {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 930px) {
+    .text {
+        width: 55%;
+    }
+    .text h1 {
+        font-size: 4em;
+    }
+    img {
+        position: absolute;
+        width: 45%;
+        right: 1px;
+    }
+    h3 {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 740px) {
+    .main {
+        height: 130vh;
+    }
+    .content {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .text {
+        top: 0;
+        width: 100%;
+        position: absolute;
+    }
+    .text h1 {
+        font-size: 5em;
+    }
+    img {
+        width: 400px;
+        height: 450px;
+        right: 20%;
+        top: 50%;
+        position: absolute;
+    }
+}
+@media only screen and (max-width: 830px) {
+    .hamburger {
+        display: block;
+    }
+    #nav-check:checked ~ .buttons {
+        left: 8px;
+    }
+    .buttons {
+        position: absolute;
+        left: -3000px;
+        top: 12;
+        z-index: 999;
+        width: 280px;
+        height: 92vh;
+        background-color: #fefefe;
+        transition: 0.4s ease-in-out;
+        border-radius: 5px;
+        box-shadow: 2px 0 20px 0 rgba(0,0,0,0.05);
+    }
+    .buttons ul {
+        display: block;
+        margin-top: 10px;
+    }
+    .buttons ul li a {
+        margin: 0;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        padding: 10px 15px;
+        color: black;
+        border: none;
+        background-color: green;
+    }
+    .buttons ul li a:hover {
+        color: white;
+        background-color: rgb(17, 11, 56);
+    }
+    .buttons ul li .active {
+        color: white;
+        background-color: rgb(17, 11, 56);
+    }
+    button {
+        width: 88%;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .text h1 {
+        font-size: 4em;
+    }
+    img {
+        right: 10%;
+    }
+    /* .text h3 {
+        font-size: 18px;
+    } */
+}
+@media only screen and (max-width: 530px) {
+    .text h1 {
+        font-size: 5em;
+    }
+    img {
+        top: 70%;
+        right: 7%;
+        width: 370px;
+        height: 385px;
+    }
+}
+@media only screen and (max-width: 400px) {
+  .text h1 {
+    font-size: 3.5em;
+  }
+  img {
+    width: 97%;
+    right: -10px;
+  }
+}

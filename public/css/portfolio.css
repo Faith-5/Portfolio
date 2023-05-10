@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color:rgb(55, 47, 107);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.main {
+    width: 97%;
+    height: 115vh;
+    border-radius: 10px;
+    margin-top: 1em;
+    background-color: rgb(17, 11, 56);
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px white;
+}
+.buttons {
+    width: 100%;
+    position: relative;
+    height: 30px;
+}
+.buttons ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.buttons ul li {
+    margin-top: 2em;
+}
+.buttons ul li a {
+    padding: 10px 25px;
+    margin: 2em .5em;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 3em;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.buttons ul li .active {
+    border: none;
+    color: rgb(17, 11, 56);
+    background-color: white;}
+.buttons ul li a:hover {
+    border: none;
+    color: rgb(17, 11, 56);
+    background-color: white;
+    transform: translateY(-30px);
+    transition: .4s ease-in-out;
+}
+button {
+    all: unset
+}
+.hamburger {
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    display: none;
+    transition: .4s ease-in-out;
+}
+.hamburger div {
+    width: 25px;
+    height: 2px;
+    margin: 6px 0;
+    background-color: white;
+}
+.section {
+  margin-top: 3.5em;
+}
+.about {
+  margin: auto
+}
+.about h1 {
+  margin-left: 12.7em;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 15em;
+}
+.title-bdr {
+    position: relative;
+    width: 150px;
+    margin: auto 27.6em;
+  }
+
+  .text-center .title-bdr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left-bdr,
+  .right-bdr {
+    height: 6px;
+    width: 60px;
+    background-image: linear-gradient(to right, white, white);
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  .left-bdr {
+    left: 0px;
+    -webkit-animation: left 2s infinite;
+            animation: left 2s infinite;
+  }
+  
+  .right-bdr {
+    right: 0px;
+    -webkit-animation: right 2s infinite;
+            animation: right 2s infinite;
+  }
+  
+  @-webkit-keyframes left {
+    0%,
+    50%,
+    100% {
+      width: 60px;
+    }
+    25% {
+      width: 120px;
+    }
+    75% {
+      width: 10px;
+    }
+  }
+  
+  @keyframes left {
+    0%,
+    50%,
+    100% {
+      width: 60px;
+    }
+    25% {
+      width: 120px;
+    }
+    75% {
+      width: 10px;
+    }
+  }
+  
+  @-webkit-keyframes right {
+    0%,
+    50%,
+    100% {
+      width: 60px;
+    }
+    25% {
+      width: 10px;
+    }
+    75% {
+      width: 120px;
+    }
+  }
+  
+  @keyframes right {
+    0%,
+    50%,
+    100% {
+      width: 60px;
+    }
+    25% {
+      width: 10px;
+    }
+    75% {
+      width: 120px;
+    }
+  }
+.container {
+    width: 100%;
+    height: 93vh;
+    box-sizing: border-box;
+    padding: 1.5em;
+}
+.row {
+    width: 30%;
+    height: 39vh;
+    box-shadow: 0px 0px 15px black;
+    margin: .7em 1em;
+    border-radius: 10px;
+    float: left;
+}
+.content {
+    text-align: center;
+    margin-top: .4em;
+}
+.image {
+    width: 93%;
+    height: 20vh;
+    display: inline-flex;
+}
+.image img {
+    width: 90%;
+    padding-left: 2em;
+}
+.text {
+    width: 93%;
+    height: 8vh;
+}
+.text h1 {
+    text-align: center;
+    padding-top: 9px;
+    color: white;
+}
+.link {
+    width: 93%;
+    height: 8vh;
+    display: inline-block;
+    overflow: hidden;
+}
+.link .github {
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    border: none;
+}
+.link .page {
+    border: none;
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    float: right;
+}
+.link .page:hover,
+.link .github:hover {
+    background-color:rgb(17, 11, 56);
+    width: 48%;
+    border: 1px solid white;
+    transition: .4s ease-in-out;
+}
+i {
+    color: rgb(17, 11, 56);
+}
+i:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 830px) {
+  .hamburger {
+      display: block;
+  }
+  #nav-check:checked ~ .buttons {
+      left: 8px;
+  }
+  .buttons {
+      position: absolute;
+      left: -3000px;
+      top: 12;
+      z-index: 999;
+      width: 280px;
+      height: 92vh;
+      background-color: #fefefe;
+      transition: 0.4s ease-in-out;
+      border-radius: 5px;
+      box-shadow: 2px 0 20px 0 rgba(0,0,0,0.05);
+  }
+  .buttons ul {
+      display: block;
+      margin-top: 10px;
+  }
+  .buttons ul li a {
+      margin: 0;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      padding: 10px 15px;
+      color: black;
+      border: none;
+      background-color: green;
+  }
+  .buttons ul li a:hover {
+      color: white;
+      background-color: rgb(17, 11, 56);
+  }
+  .buttons ul li .active {
+      color: white;
+      background-color: rgb(17, 11, 56);
+  }
+  button {
+      width: 88%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .section {
+    position: absolute;
+    right: -10px;
+  }
+  .text {
+    font-size: .6em;
+    height: 6vh;
+  }
+  p {
+    margin-top: 5em;
+  }
+}
+@media only screen and (max-width: 1043px) {
+  .main {
+    height: fit-content;
+  }
+  .row {
+    width: 40%;
+    margin-left: 6%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .section {
+    position: absolute;
+    right: 10px;
+  }
+  p {
+    padding-left: 10em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .section {
+    right: -30px;
+  }
+  p {
+    padding-left: 6em;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .section {
+    right: -170px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .row {
+    height: 36vh;
+  }
+  .link {
+    height: 6vh;
+  }
+  .section {
+    right: -170px;
+  }
+}
+@media only screen and  (max-width: 700px) {
+  p {
+    padding-left: 3em;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .section {
+    right: -160px;
+  }
+  p {
+    padding-left: 2em;
+  }
+  .container {
+    padding: .4em;
+    justify-content: space-between;
+  }
+  .row {
+    margin-left: 6%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .section {
+    right: -260px;
+  }
+  p {
+    padding-left: .2em;
+    text-align: center;
+  }
+  .container {
+    margin: .4em;
+  }
+  .row {
+    width: 70%;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .row {
+    width: 83%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section {
+    right: -320px;
+  }
+}

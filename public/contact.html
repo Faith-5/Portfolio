@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="./images/Bamidele Faith.jpg">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="nav-check" hidden>
+        <div class="buttons">
+            <ul>
+                <li><a href="./index.html"><button class="nav-button">Home</button></a></li>
+                <li><a href="./about.html"><button class="nav-button">About Me</button></a></li>
+                <li><a href="./portfolio.html"><button class="nav-button">Portfolio</button></a></li>
+                <li><a href="./testimonial.html"><button class="nav-button">Testimonials</button></a></li>
+                <li><a href="./contact.html" class="active"><button class="nav-button">Contact Me</button></a></li>
+            </ul>
+        </div>
+        <label for="nav-check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <div class="section">
+            <div class="about">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="title-bdr">
+                <div class="left-bdr"></div>
+                <div class="right-bdr"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <a href="https://wa.me/message/EDWOSJGWWVISN1"><button class="rowBtn"><i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp; &nbsp; Continue with Whatsapp</button></a>
+                <a href="https://www.facebook.com/faith.bamidele.566"><button class="rowBtn"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; &nbsp; Continue with Facebook</button></a>
+                <a href="https://twitter.com/BamideleFaith14?t=Kb-ZxF5FdG1gnX9IkEt_6A&s=09"><button class="rowBtn"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp; &nbsp; Continue with Twitter</button></a>
+                <a href="https://www.linkedin.com/in/bamidele-faith-82a167259"><button class="rowBtn"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp; &nbsp; Continue with Linkedin</button></a>
+            </div>
+            <div class="row2">
+                <form method="POST" id="contact-form" action="/contact">
+                    <!-- First Name -->
+                    <label for="name">First Name:</label>
+                    <input class="name" type="text" name="name" id="name" placeholder="John" required autocomplete="off">
+                    <br>
+                    <!-- Last Name -->
+                    <label for="lname">Last Name:</label>
+                    <input class="lname" type="text" name="lname" id="lname" placeholder="Doe" required autocomplete="off">
+                    <br>
+                    <!-- Email address -->
+                    <label for="email">Email Address:</label>
+                    <input class="email" type="email" name="email" id="email" placeholder="email@gmail.com" required autocomplete="off">
+                    <br>
+                    <!-- Message -->
+                    <span class="message">
+                        <label for="message">Message: </label>
+                        <textarea class="message" name="message" id="message" cols="40" rows="10"></textarea>
+                    </span>
+                    <div class="submit">
+                        <button class="btn">Send Message &nbsp; &nbsp; <i class="fa fa-envelope" aria-hidden="true"></i></button>
+                    </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
